@@ -18,6 +18,8 @@ import TransitionDemo12 from '@/components/TransitionDemo12';
 import TransitionDemo13 from '@/components/TransitionDemo13';
 import TransitionDemo14 from '@/components/TransitionDemo14';
 import TransitionDemo15 from '@/components/TransitionDemo15';
+import TransitionDemo16 from '@/components/TransitionDemo16';
+import TransitionDemo17 from '@/components/TransitionDemo17';
 Vue.use(Router);
 
 export default new Router({
@@ -110,6 +112,17 @@ export default new Router({
       path: '/transition15',
       name: 'transition-demo15',
       component: TransitionDemo15
+    },
+    {
+      path: '/transition16',
+      name: 'transition-demo16',
+      component: TransitionDemo16
+    }
+    ,
+    {
+      path: '/transition17',
+      name: 'transition-demo17',
+      component: TransitionDemo17
     }
   ]
 });

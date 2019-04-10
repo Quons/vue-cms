@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import MintUI from 'mint-ui'
+// import 'mint-ui/lib/style.css'
+import {Button} from 'mint-ui'
 // import vr from 'vue-resource'
 import axios from 'axios'
 Vue.config.productionTip = false
@@ -34,11 +37,11 @@ Vue.filter('dateformat', function (val) {
   return `${year}-${month}-${day} ${hour}:${minutes}:${seconds}`
 })
 
-
-// Vue.use(vr);
-new Vue({
+Vue.component(Button.name, Button);
+// Vue.use(MintUI);
+new Vue({ 
   el: '#app',
-  router,
+  router, 
   components: {
     App
   },
